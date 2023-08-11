@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const addTodoBtn = document.getElementById("addTodoBtn");
   const todoList = document.getElementById("todoList");
 
-  addTodoBtn.addEventListener("click", function () {
+  addTodoBtn.onclick(function () {
     const todoText = newTodoInput.value.trim();
     if (todoText !== "") {
       const li = document.createElement("li");
